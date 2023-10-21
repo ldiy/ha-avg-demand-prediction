@@ -1,0 +1,11 @@
+{
+  "domain": "avg_demand_prediction",
+  "name": "Avg Demand Prediction",
+  "codeowners": [
+    "@ldiy"
+  ],
+  "config_flow": false,
+  "iot_class": "calculated",
+  "requirements": ["numpy==1.26.0"],
+  "version": "1.0.0"
+}
