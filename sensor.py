@@ -108,7 +108,7 @@ class AvgDemandPredictionSensor(SensorEntity):
 
         # Calculate the prediction
         await self.hass.async_add_executor_job(self._calc_prediction)
-        self._attr_native_value = self.prediction
+        self._attr_native_value = round(self.prediction, 3)
 
 
     def _calc_prediction(self) -> None:
